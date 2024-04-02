@@ -1,25 +1,5 @@
-/* Error: Module loop: this module is already being loaded.
- *   ,--> scss\global\mixin\_index.scss
- * 2 | @use "../../foundation/base";
- *   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^ new load
- *   '
- *   ,--> scss\foundation\_index.scss
- * 2 | @use "base";
- *   | =========== original load
- *   '
- *   scss\global\mixin\_index.scss 2:1  @forward
- *   scss\global\_index.scss 1:1        @use
- *   scss\foundation\_base.scss 1:1     @use
- *   scss\foundation\_index.scss 2:1    @use
- *   scss\style.scss 1:1                root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: 'Error: Module loop: this module is already being loaded.\a   \250c \2500 \2500 > scss\\global\\mixin\\_index.scss\a 2 \2502  @use "../../foundation/base";\d\a   \2502  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^ new load\a   \2575 \a   \250c \2500 \2500 > scss\\foundation\\_index.scss\a 2 \2502  @use "base";\a   \2502  \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501  original load\a   \2575 \a   scss\\global\\mixin\\_index.scss 2:1  @forward\a   scss\\global\\_index.scss 1:1        @use\a   scss\\foundation\\_base.scss 1:1     @use\a   scss\\foundation\\_index.scss 2:1    @use\a   scss\\style.scss 1:1                root stylesheet';
+body {
+  font-family: "Noto Sans JP";
+  font-weight: bold;
+  background-color: #000993;
 }
