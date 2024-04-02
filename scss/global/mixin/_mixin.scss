@@ -1,0 +1,6 @@
+@use "../setting" as s;
+
+@mixin font-normal {
+  font-family: s.$font-family;
+  font-weight: bold;
+}

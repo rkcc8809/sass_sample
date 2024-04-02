@@ -1,0 +1,6 @@
+@use "../global" as g;
+
+body {
+  @include g.font-normal;
+  background-color: g.$color;
+}
